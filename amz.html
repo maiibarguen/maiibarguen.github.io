@@ -70,9 +70,9 @@
                     <!-- Nav -->
                     <nav id="nav">
                         <ul>
-                            <li><a href="#" id="scnart_link" onclick="show_dropdown()">ARTES ESC&Eacute;NICAS</a>
-                                <ul id="scnart_dropdown" style="display: none;">
-                                    <li><a href="amz.html">AMZ</a></li>
+                            <li><a href="#" id="scnart_link" onclick="show_dropdown()" class="nav_selected">ARTES ESC&Eacute;NICAS</a>
+                                <ul id="scnart_dropdown">
+                                    <li><a href="amz.html" class="nav_selected">AMZ</a></li>
                                     <li><a href="encuentros.html">Encuentros</a></a></li>
                                     <li><a href="festivales.html">Festivales</a></li>
                                 </ul>
@@ -105,31 +105,17 @@
                         <div id="gallery">
                                                             <div id="masonry-grid">
                                                                 <div class="gutter-sizer"></div>
-                                                                <!--div class="grid-item"><a href="images/home/home_1.jpg" data-lightbox="photos_home"  class="image"><img src="images/home/home_thumb_1.jpg" alt=""  width="222px" height="147px" /></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_2.jpg" data-lightbox="photos_home"  class="image" ><img src="images/home/home_thumb_2.jpg" alt=""  width="222px" height="147px" /></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_3.jpg" data-lightbox="photos_home"  class="image"><img src="images/home/home_thumb_3.jpg" alt=""  width="222px" height="147px" /></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_4.jpg" data-lightbox="photos_home"  class="image"><img src="images/home/home_thumb_4.jpg" alt=""  width="222px" height="147px" /></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_5.jpg" data-lightbox="photos_home"  class="image" ><img src="images/home/home_thumb_5.jpg" alt=""  width="454px" height="304px" /></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_6.jpg" data-lightbox="photos_home"  class="image"><img src="images/home/home_thumb_6.jpg" alt=""  width="222px" height="147px" /></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_7.jpg" data-lightbox="photos_home"  class="image"><img src="images/home/home_thumb_7.jpg" alt=""  width="222px" height="147px" /></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_8.jpg" data-lightbox="photos_home"  class="image" ><img src="images/home/home_thumb_8.jpg" alt=""  width="222px" height="147px" /></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_9.jpg" data-lightbox="photos_home"  class="image" ><img src="images/home/home_thumb_9.jpg" alt=""  width="222px" height="304px" /></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_10.jpg" data-lightbox="photos_home"  class="image"><img src="images/home/home_thumb_10.jpg" alt=""  width="222px" height="147px" /></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_11.jpg" data-lightbox="photos_home"  class="image" ><img src="images/home/home_thumb_11.jpg" alt=""  width="222px" height="147px" /></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_12.jpg" data-lightbox="photos_home"  class="image" ><img src="images/home/home_thumb_12.jpg" alt=""  width="222px" height="147px" /></a></div-->
-                                                                
-                                                                <div class="grid-item"><a href="images/home/home_1.jpg" data-lightbox="photos_home"  class="image"><img src="images/home/home_thumb_1.jpg" alt="" /></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_2.jpg" data-lightbox="photos_home"  class="image" ><img src="images/home/home_thumb_2.jpg" alt=""/></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_3.jpg" data-lightbox="photos_home"  class="image"><img src="images/home/home_thumb_3.jpg" alt=""/></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_4.jpg" data-lightbox="photos_home"  class="image"><img src="images/home/home_thumb_4.jpg" alt=""/></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_5.jpg" data-lightbox="photos_home"  class="image" ><img src="images/home/home_thumb_5.jpg" alt=""/></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_6.jpg" data-lightbox="photos_home"  class="image"><img src="images/home/home_thumb_6.jpg" alt=""/></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_7.jpg" data-lightbox="photos_home"  class="image"><img src="images/home/home_thumb_7.jpg" alt=""/></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_8.jpg" data-lightbox="photos_home"  class="image" ><img src="images/home/home_thumb_8.jpg" alt=""/></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_9.jpg" data-lightbox="photos_home"  class="image" ><img src="images/home/home_thumb_9.jpg" alt=""/></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_10.jpg" data-lightbox="photos_home"  class="image"><img src="images/home/home_thumb_10.jpg" alt=""/></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_11.jpg" data-lightbox="photos_home"  class="image" ><img src="images/home/home_thumb_11.jpg" alt=""/></a></div>
-                                                                <div class="grid-item"><a href="images/home/home_12.jpg" data-lightbox="photos_home"  class="image" ><img src="images/home/home_thumb_12.jpg" alt=""/></a></div>
+                                                                <div class="grid-item"><a href="images/amz/amz_1.jpg" data-lightbox="photos_amz"  class="image"><img src="images/amz/amz_thumb_1.jpg" alt="" /></a></div>
+                                                                <div class="grid-item"><a href="images/amz/amz_2.jpg" data-lightbox="photos_amz"  class="image" ><img src="images/amz/amz_thumb_2.jpg" alt="" /></a></div>
+                                                                <div class="grid-item"><a href="images/amz/amz_3.jpg" data-lightbox="photos_amz"  class="image"><img src="images/amz/amz_thumb_3.jpg" alt="" /></a></div>
+                                                                <div class="grid-item"><a href="images/amz/amz_4.jpg" data-lightbox="photos_amz"  class="image"><img src="images/amz/amz_thumb_4.jpg" alt="" /></a></div>
+                                                                <div class="grid-item"><a href="images/amz/amz_5.jpg" data-lightbox="photos_amz"  class="image" ><img src="images/amz/amz_thumb_5.jpg" alt="" /></a></div>
+                                                                <div class="grid-item"><a href="images/amz/amz_6.jpg" data-lightbox="photos_amz"  class="image"><img src="images/amz/amz_thumb_6.jpg" alt="" /></a></div>
+                                                                <div class="grid-item"><a href="images/amz/amz_7.jpg" data-lightbox="photos_amz"  class="image"><img src="images/amz/amz_thumb_7.jpg" alt="" /></a></div>
+                                                                <div class="grid-item"><a href="images/amz/amz_8.jpg" data-lightbox="photos_amz"  class="image" ><img src="images/amz/amz_thumb_8.jpg" alt="" /></a></div>
+                                                                <div class="grid-item"><a href="images/amz/amz_9.jpg" data-lightbox="photos_amz"  class="image" ><img src="images/amz/amz_thumb_9.jpg" alt="" /></a></div>
+                                                                <div class="grid-item"><a href="images/amz/amz_10.jpg" data-lightbox="photos_amz"  class="image"><img src="images/amz/amz_thumb_10.jpg" alt="" /></a></div>
+                                                                <div class="grid-item"><a href="images/amz/amz_11.jpg" data-lightbox="photos_amz"  class="image" ><img src="images/amz/amz_thumb_11.jpg" alt="" /></a></div>
                                                             </div>
                             </div>
                         </div>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mai Ibarg&uuml;en Photography</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+                <meta http-equiv="imagetoolbar" content="no" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+                <link rel="resource" type="application/l10n" href="locales/locales.ini" />
+                <script src="js/l10n.js"></script>
+		<script src="js/lightbox.min.js"></script>
+                <link href="css/lightbox.css" rel="stylesheet" />
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+                <script src="js/masonry.pkgd.min.js"></script>
+                <script src="js/imagesloaded.pkgd.min.js"></script>
+                
+                <script>
+                    show_dropdown = function() {
+                        if ($('#scnart_dropdown').is(":hidden")){
+                            $('#scnart_dropdown').show();
+                            $('#scnart_link').addClass("nav_selected");
+                        }
+                        else {
+                            $('#scnart_dropdown').hide();
+                            $('#scnart_link').removeClass("nav_selected");
+                        }
+                    }
+                    
+                    if (document.addEventListener) {
+        document.addEventListener('contextmenu', function(e) { //here you draw your own menu
+            e.preventDefault();
+        }, false);
+    } else {
+        document.attachEvent('oncontextmenu', function() {
+            window.event.returnValue = false;
+        });
+    }
+                </script>
+
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+            <!-- Header -->
+            <div id="header" class="skel-layers-fixed">
+                <div class="top">
+                    <!-- Logo -->
+                    <div id="brand">
+                        <a href="index.html" id="home_brand">MAI IBARG&Uuml;EN</a>
+                        <div id="photography">PHOTOGRAPHY</div>
+                    </div>
+
+                    <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="#" id="scnart_link" onclick="show_dropdown()">ARTES ESC&Eacute;NICAS</a>
+                                <ul id="scnart_dropdown" style="display: none;">
+                                    <li><a href="amz.html">AMZ</a></li>
+                                    <li><a href="encuentros.html">Encuentros</a></a></li>
+                                    <li><a href="festivales.html">Festivales</a></li>
+                                </ul>
+                            </li>
+                            <!--li><a href="" id="personal_link">PERSONAL</a></li-->
+                            <li><a href="bio.html" id="bio_link" class="nav_selected">BIO</a></li>
+                            <li><a href="contact.html" id="contact_link">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- Social Icons -->
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/maiibarguen" target="_blank"><div id="facebook_icon"></div></a></li>
+                        <li><a href="https://instagram.com/maiibarguen/" target="_blank"><div id="instagram_icon"></div></a></li>
+                        <li><a href="https://www.flickr.com/photos/maimei/" target="_blank"><div id="flickr_icon"></div></a></li>
+                        <!--li><a href="https://www.facebook.com/profile.php?id=100005021984806" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://instagram.com/maiibarguen/" class="icon fa-instagram" target="_blank"><span class="label">Facebook</span></a></li>
+                        <li><a href="contact.html" class="icon fa-envelope"><span class="label">Email</span></a></li-->
+                    </ul>
+                </div>
+				
+		<div class="bottom"></div>
+			
+            </div>
+
+            <!-- Main -->
+            <div id="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="6u">
+                            <div id="bio_text">
+                                Dise&ntilde;adora gr&aacute;fica formada en diversas escuelas en busca de mi propio estilo. En el camino descubr&iacute; la fotograf&iacute;a, la cual se convirti&oacute; en mi pasi&oacute;n y vocaci&oacute;n.<br><br>De forma paralela a la escuela comenc&eacute; a investigar con una c&aacute;mara y a formarme de forma profesional. A trav&eacute;s de un objetivo he construido una forma de vida. Soy sensible al encanto de los detalles m&aacute;s sutiles, me emocionan las expresiones&hellip; Creo que se trata de capturar momentos y transmitir sensaciones.<br><br>Con total disponibilidad geogr&aacute;fica, estar&eacute; encantada de ayudarte a realizar el proyecto que tengas en la cabeza, &iexcl;escr&iacute;beme y cu&eacute;ntame c&oacute;mo te puedo ayudar!<br><br>maiibarguenphotography@gmail.com
+                            </div>
+                        </div>
+                        <div class="6u">
+                            <img src="images/fotoBio.jpg" alt="" style="width: 90%;" id="bio_photo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+		<!-- Footer -->
+		<!--div id="footer">
+                    <div id="home_logo">
+                        <a href="index.html"><span class="image avatar170"><img src="images/marca.png" alt="Mai Ibarg&uuml;en Photography" /></span></a>
+                    </div>
+                    <a class="email" href="mailto:maiibarguenphotography@gmail.com">maiibarguenphotography&#64;gmail.com</a> <br/ >(+34) 605 90 57 52
+                    <br>
+		</div-->
+	</body>
+        <script>
+            var container = document.querySelector('#masonry-grid');
+            var msnry;
+            // initialize Masonry after all images have loaded
+            imagesLoaded( container, function() {
+            msnry = new Masonry( container, {
+                    columnWidth: 232,
+                    itemSelector: '.grid-item',
+                    gutter: 0
+                    } );
+            });
+        </script>
+</html>

@@ -301,8 +301,8 @@
 					ul.icons a
 					{
 						display: inline-block;
-						width: 30px;
-						height: 30px;
+						width: 22px;
+						height: 22px;
 						line-height: 2em;
 						text-align: center;
 						border: 0;
@@ -893,16 +893,27 @@
             width:160px;
 	}
 	
+        @font-face {
+            font-family: Biko_Bold;
+            font-weight: bold;
+            src: url("../fonts/Biko_Bold.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: Biko_Light-Restricted;
+            src: url("../fonts/Biko_Light-Restricted.otf") format("opentype");
+        }
+        
         #home_brand {
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Biko_Bold', sans-serif;
             font-size: 19pt;
             font-weight: 800;
             color: #000;
         }
         
         #photography {
-            font-family: 'headerFont', 'Source Sans Pro', sans-serif;
-            font-size: 14pt;
+            font-family: 'Biko_Light-Restricted', 'Source Sans Pro', sans-serif;
+            font-size: 13pt;
             color: #888;
         }
         
@@ -948,41 +959,41 @@
         }
         
         #facebook_icon {
-            background-image: url('../images/facebook_icon.png');
-            height: 30px;
-            width: 30px;
+            background-image: url('../images/facebook-icon.png');
+            height: 22px;
+            width: 22px;
         }
 
         #facebook_icon:hover {
-            background-image: url('../images/facebook_icon_hover.png');
-            height: 30px;
-            width: 30px;
+            background-image: url('../images/facebook-icon-hover.png');
+            height: 22px;
+            width: 22px;
         }
         
         
         #instagram_icon {
-            background-image: url('../images/instagram_icon.png');
-            height: 30px;
-            width: 30px;
+            background-image: url('../images/instagram-icon.png');
+            height: 22px;
+            width: 22px;
         }
 
         #instagram_icon:hover {
-            background-image: url('../images/instagram_icon_hover.png');
-            height: 30px;
-            width: 30px;
+            background-image: url('../images/instagram-icon-hover.png');
+            height: 22px;
+            width: 22px;
         }
         
         
-        #flickr_icon {
-            background-image: url('../images/flickr_icon.png');
-            height: 30px;
-            width: 30px;
+        #linkedin_icon {
+            background-image: url('../images/linkedin-icon.png');
+            height: 22px;
+            width: 22px;
         }
 
-        #flickr_icon:hover {
-            background-image: url('../images/flickr_icon_hover.png');
-            height: 30px;
-            width: 30px;
+        #linkedin_icon:hover {
+            background-image: url('../images/linkedin-icon-hover.png');
+            height: 22px;
+            width: 22px;
         }
         
         #bio_text

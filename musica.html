@@ -5,7 +5,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
+            <head profile="http://www.w3.org/2005/10/profile">
+                <link rel="icon" 
+                      type="image/png" 
+                      href="images/favicon.png" />
 		<title>Mai Ibarg&uuml;en Photography</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="title" content="Musica">
@@ -40,6 +43,17 @@
                         else {
                             $('#scnart_dropdown').hide();
                             $('#scnart_link').removeClass("nav_selected");
+                        }
+                    }
+                    
+                    show_dropdown_series = function() {
+                        if ($('#series_dropdown').is(":hidden")){
+                            $('#series_dropdown').show();
+                            $('#series_link').addClass("nav_selected");
+                        }
+                        else {
+                            $('#series_dropdown').hide();
+                            $('#series_link').removeClass("nav_selected");
                         }
                     }
                     
@@ -80,6 +94,11 @@
                                     <li><a href="amz.html">AMZ</a></li>
                                 </ul>
                             </li>
+                            <li><a href="#" id="series_link" onclick="show_dropdown_series()">SERIES</a>
+                                <ul id="series_dropdown" style="display: none;">
+                                    <li><a href="piesdecirco.html">Con Pies de Circo</a></li>
+                                </ul>
+                            </li>
                             <!--li><a href="" id="personal_link">PERSONAL</a></li-->
                             <li><a href="bio.html" id="bio_link">BIO</a></li>
                             <li><a href="contact.html" id="contact_link">CONTACTO</a></li>
@@ -108,16 +127,25 @@
                         <div id="gallery">
                                                             <div id="masonry-grid">
                                                                 <div class="gutter-sizer"></div>
-                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-1.jpg" data-lightbox="photos_musica"  class="image" data-title=""><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-1.jpg" alt="MaiIbarguen-Zaragoza-fotografa-artes-escenicas-festivales-circo-danza-musica" title="Mai-Ibarguen-Fiestas-Pilar-Macaco"/></a></div>
-                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-2.jpg" data-lightbox="photos_musica"  class="image" data-title=""><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-2.jpg" alt="MaiIbarguen-Zaragoza-fotografa-artes-escenicas-festivales-circo-danza-musica" title="Mai-Ibarguen-Raichs-Burrut-Zaragoza"/></a></div>
-                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-3.jpg" data-lightbox="photos_musica"  class="image" data-title=""><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-3.jpg" alt="MaiIbarguen-Zaragoza-fotografa-artes-escenicas-festivales-circo-danza-musica" title="Mai-Ibarguen-Fiestas-Pilar-TelonerosBand"/></a></div>
-                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-4.jpg" data-lightbox="photos_musica"  class="image" data-title=""><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-4.jpg" alt="MaiIbarguen-Zaragoza-fotografa-artes-escenicas-festivales-circo-danza-musica" title="Mai-Ibarguen-Fiestas-Pilar-LosGandules"/></a></div>
-                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-5.jpg" data-lightbox="photos_musica"  class="image" data-title=""><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-5.jpg" alt="MaiIbarguen-Zaragoza-fotografa-artes-escenicas-festivales-circo-danza-musica" title="Mai-Ibarguen-Fiestas-Pilar-LosGandules"/></a></div>
-                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-6.jpg" data-lightbox="photos_musica"  class="image" data-title=""><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-6.jpg" alt="MaiIbarguen-Zaragoza-fotografa-artes-escenicas-festivales-circo-danza-musica" title="Mai-Ibarguen-ArtenBitrir-LasXL"/></a></div>
-                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-7.jpg" data-lightbox="photos_musica"  class="image" data-title=""><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-7.jpg" alt="MaiIbarguen-Zaragoza-fotografa-artes-escenicas-festivales-circo-danza-musica" title="Mai-Ibarguen-Fiestas-Pilar-Macaco"/></a></div>
-                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-8.jpg" data-lightbox="photos_musica"  class="image" data-title=""><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-8.jpg" alt="MaiIbarguen-Zaragoza-fotografa-artes-escenicas-festivales-circo-danza-musica" title="Mai-Ibarguen-ArtenBitrir-MuchoMonte"/></a></div>
-                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-9.jpg" data-lightbox="photos_musica"  class="image" data-title=""><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-9.jpg" alt="MaiIbarguen-Zaragoza-fotografa-artes-escenicas-festivales-circo-danza-musica" title="Mai-Ibarguen-Fiestas-Pilar-LaUnion"/></a></div>
-                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-10.jpg" data-lightbox="photos_musica"  class="image" data-title=""><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-10.jpg" alt="MaiIbarguen-Zaragoza-fotografa-artes-escenicas-festivales-circo-danza-musica" title="Mai-Ibarguen-Fiestas-Pilar-Zaragoza-Bronson"/></a></div>
+                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-1.jpg" data-lightbox="photos_musica"  class="image" data-title="Macaco. Fiestas del Pilar, Zaragoza."><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-1.jpg" alt="Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.Macaco. Fiestas del Pilar, Zaragoza." title="Mai Ibarg&uuml;en. Macaco. Fiestas del Pilar, Zaragoza."/></a></div>
+                                                               
+                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-2.jpg" data-lightbox="photos_musica"  class="image" data-title="Albert Burrut&amp;Cristina Raichs. Concierto en Fox Tavern, Zaragoza."><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-2.jpg" alt="Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.Albert Burrut&amp;Cristina Raichs. Concierto en Fox Tavern, Zaragoza." title="Mai Ibarg&uuml;en. Albert Burrut&amp;Cristina Raichs. Concierto en Fox Tavern, Zaragoza."/></a></div>
+                                                               
+                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-3.jpg" data-lightbox="photos_musica"  class="image" data-title="Teloneros Band. Fiestas del Pilar, Zaragoza."><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-3.jpg" alt="Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.Teloneros Band. Fiestas del Pilar, Zaragoza." title="Mai Ibarg&uuml;en. Teloneros Band. Fiestas del Pilar, Zaragoza."/></a></div>
+                                                              
+                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-4.jpg" data-lightbox="photos_musica"  class="image" data-title="Los Gandules. Fiestas del Pilar, Zaragoza."><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-4.jpg" alt="Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.Los Gandules. Fiestas del Pilar, Zaragoza." title="Mai Ibarg&uuml;en. Los Gandules. Fiestas del Pilar, Zaragoza."/></a></div>
+                                                              
+                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-5.jpg" data-lightbox="photos_musica"  class="image" data-title="Los Gandules. Fiestas del Pilar, Zaragoza."><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-5.jpg" alt="Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.Los Gandules. Fiestas del Pilar, Zaragoza." title="Mai Ibarg&uuml;en. Los Gandules. Fiestas del Pilar, Zaragoza."/></a></div>
+                                                              
+                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-6.jpg" data-lightbox="photos_musica"  class="image" data-title="Las XL. Art en Bitrir. Encuentro de Artistas de Calle de Petrer, Alicante."><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-6.jpg" alt="Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.Las XL. Art en Bitrir. Encuentro de Artistas de Calle de Petrer, Alicante." title="Mai Ibarg&uuml;en. Las XL. Art en Bitrir. Encuentro de Artistas de Calle de Petrer, Alicante."/></a></div>
+                                                              
+                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-7.jpg" data-lightbox="photos_musica"  class="image" data-title="Macaco. Fiestas del Pilar, Zaragoza."><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-7.jpg" alt="Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.Macaco. Fiestas del Pilar, Zaragoza." title="Mai Ibarg&uuml;en. Macaco. Fiestas del Pilar, Zaragoza."/></a></div>
+                                                               
+                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-8.jpg" data-lightbox="photos_musica"  class="image" data-title="Supercumbia y la liga de la alegr&iacute;a. Art en Bitrir. Encuentro de Artistas de Calle de Petrer, Alicante."><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-8.jpg" alt="Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.Supercumbia y la liga de la alegr&iacute;a. Art en Bitrir. Encuentro de Artistas de Calle de Petrer, Alicante." title="Mai Ibarg&uuml;en. Supercumbia y la liga de la alegr&iacute;a. Art en Bitrir. Encuentro de Artistas de Calle de Petrer, Alicante."/></a></div>
+                                                              
+                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-9.jpg" data-lightbox="photos_musica"  class="image" data-title="La Uni&oacute;n. Fiestas del Pilar, Zaragoza."><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-9.jpg" alt="Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.La Uni&oacute;n. Fiestas del Pilar, Zaragoza." title="Mai Ibarg&uuml;en. La Uni&oacute;n. Fiestas del Pilar, Zaragoza."/></a></div>
+                                                               
+                                                                <div class="grid-item"><a href="images/musica/maiibarguen-fotografia-artes-escenicas-musica-10.jpg" data-lightbox="photos_musica"  class="image" data-title="Los Bronson. Fiestas del Pilar, Zaragoza. "><img src="images/musica/maiibarguen-fotografia-artes-escenicas-musica-thumb-10.jpg" alt="Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.Los Bronson. Fiestas del Pilar, Zaragoza." title="Mai Ibarg&uuml;en. Los Bronson. Fiestas del Pilar, Zaragoza."/></a></div>
                                                                
                                                                
                                                                    

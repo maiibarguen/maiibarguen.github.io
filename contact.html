@@ -5,7 +5,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
+            <head profile="http://www.w3.org/2005/10/profile">
+                <link rel="icon" 
+                      type="image/png" 
+                      href="images/favicon.png" />
 		<title>Mai Ibarg&uuml;en Photography</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="title" content="Contacto Mai Ibarguen">
@@ -40,6 +43,17 @@
                         else {
                             $('#scnart_dropdown').hide();
                             $('#scnart_link').removeClass("nav_selected");
+                        }
+                    }
+                    
+                    show_dropdown_series = function() {
+                        if ($('#series_dropdown').is(":hidden")){
+                            $('#series_dropdown').show();
+                            $('#series_link').addClass("nav_selected");
+                        }
+                        else {
+                            $('#series_dropdown').hide();
+                            $('#series_link').removeClass("nav_selected");
                         }
                     }
                     
@@ -78,6 +92,11 @@
                                     <li><a href="eventos.html">Eventos</a></li>
                                     <li><a href="encuentros.html">Encuentros Malabaristas</a></a></li>
                                     <li><a href="amz.html">AMZ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" id="series_link" onclick="show_dropdown_series()">SERIES</a>
+                                <ul id="series_dropdown" style="display: none;">
+                                    <li><a href="piesdecirco.html">Con Pies de Circo</a></li>
                                 </ul>
                             </li>
                             <!--li><a href="" id="personal_link">PERSONAL</a></li-->

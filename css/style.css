@@ -998,10 +998,16 @@
         
         #bio_text
         {
-            font-size: 12pt;
+            font-size: 10pt;
             text-align:justify;
             width: 90%;
             margin: 70px 20px;
+        }
+        
+        #bio_text strong
+        {
+            color: #145c7f;
+            font-weight: bold;
         }
         
         #bio_photo
@@ -1012,7 +1018,7 @@
         
         #contact_content
         {
-            font-size: 12pt;
+            font-size: 10pt;
             text-align:center;
         }
         

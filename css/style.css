@@ -1027,3 +1027,37 @@
         {
             margin: 20px 0 0 0;
         }
+        
+        #blog_entries
+        {
+            font-size: 10pt;
+            text-align:justify;
+            width: 90%;
+            margin: 70px 20px;
+        }
+        
+        .blog_title
+        {
+            position: relative;
+            color: #000;
+            font-weight: 600;
+            font-size: 1em;
+            line-height: 1em;
+            margin: 0 0 10px 0;
+        }
+        
+        #blog_entries a
+        {
+            color: #145c7f;
+        }
+        
+        #blog_entries #blog_read_more
+        {
+            color: #5da7cc;
+        }
+        
+        #blog_entry
+        {
+            vertical-align: middle;
+            margin: 0 0 20px 0;
+        }

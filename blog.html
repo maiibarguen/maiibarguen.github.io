@@ -5,14 +5,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-            <head profile="http://www.w3.org/2005/10/profile">
+	<head profile="http://www.w3.org/2005/10/profile">
                 <link rel="icon" 
                       type="image/png" 
                       href="images/favicon.png" />
-		<title>Mai Ibarg&uuml;en Photography</title>
+        	<title>Mai Ibarg&uuml;en Photography</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="title" content="Contacto Mai Ibarguen">
-		<meta name="description" content="Si quieres una imagen donde tanto la t&eacute;cnica y la emoci&oacute;n est&eacute;n reflejados ¡Cuenta conmigo!" />
+		<meta name="title" content="Biografia Mai Ibarguen">
+		<meta name="description" content="Biografia Mai Ibarguen" />
 		<meta name="keywords" content="Fotografia-Photography-fotografa-photograph-artesescenicas-circo-circus-danza-dance-teatro-musica-music-festivales-performingarts-Zaragoza" />
                 <meta http-equiv="imagetoolbar" content="no" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
@@ -61,11 +61,49 @@
         document.addEventListener('contextmenu', function(e) { //here you draw your own menu
             e.preventDefault();
         }, false);
-    } else {
+    } else {f
         document.attachEvent('oncontextmenu', function() {
             window.event.returnValue = false;
         });
     }
+    
+  // https://rss2json.com/docs  
+  $.ajax({
+        url: 'https://api.rss2json.com/v1/api.json',
+        method: 'GET',
+        dataType: 'json',
+        data: {
+            rss_url: 'https://maiibarguen.wordpress.com/feed/',
+        }
+}).done(function (response) {
+    if(response.status != 'ok'){ throw response.message; }
+
+    // console.log('====== ' + response.feed.title + ' ======');
+    
+    for(var i in response.items){
+        var item = response.items[i];
+        
+        var length = 300
+        if (item.description.length < length){
+            $( "#blog_entries" ).append( "<div class='row' id='blog_entry'><div class='6u'><p class='blog_title'><a href='"+item.link+"' target='_blank'>"+item.title+"</a></p>"+item.description+"<a id='blog_read_more' href='"+item.link+"' target='_blank'>Leer m&aacute;s</a></div><div class='4u'><a href='"+item.link+"' target='_blank'><img src='"+item.thumbnail+"' alt='Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.' title='Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.' style='width: 90%;' /></a></div></div>" );
+        }
+        else {
+            // Set maximum of the string to 200 characters
+            var trimmedDescription = item.description.substring(0, length);
+        
+            $( "#blog_entries" ).append( "<div class='row' id='blog_entry'><div class='6u'><p class='blog_title'><a href='"+item.link+"' target='_blank'>"+item.title+"</a></p>"+trimmedDescription+" […] <a id='blog_read_more' href='"+item.link+"' target='_blank'>Leer m&aacute;s</a></div><div class='4u'><a href='"+item.link+"' target='_blank'><img src='"+item.thumbnail+"' alt='Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.' title='Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos.' style='width: 90%;' /></a></div></div>" );
+        }
+        
+/*        var dotPosition = item.content.indexOf(".jpg");
+        var httpsPosition = item.content.lastIndexOf("https", dotPosition);
+        var imageSource = item.content.substring(httpsPosition, dotPosition+4);
+        $( "#blog_entries" ).append( imageSource );*/
+        
+    }
+});  
+    
+    
+    
                 </script>
 
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
@@ -89,8 +127,8 @@
                                 <ul id="scnart_dropdown" style="display: none;">
                                     <li><a href="festivales.html">Festivales</a></li>
                                     <li><a href="musica.html">M&uacute;sica</a></li>
-                                    <li><a href="eventos.html">Eventos</a></li>
                                     <li><a href="encuentros.html">Encuentros Malabaristas</a></a></li>
+                                    <li><a href="eventos.html">Eventos</a></li>
                                     <li><a href="amz.html">AMZ</a></li>
                                 </ul>
                             </li>
@@ -101,8 +139,8 @@
                             </li>
                             <!--li><a href="" id="personal_link">PERSONAL</a></li-->
                             <li><a href="bio.html" id="bio_link">BIO</a></li>
-                            <li><a href="blog.html" id="blog_link">BLOG</a></li>
-                            <li><a href="contact.html" id="contact_link" class="nav_selected">CONTACTO</a></li>
+                            <li><a href="blog.html" id="blog_link" class="nav_selected">BLOG</a></li>
+                            <li><a href="contact.html" id="contact_link">CONTACTO</a></li>
                         </ul>
                     </nav>
                     
@@ -111,9 +149,6 @@
                         <li><a href="https://www.facebook.com/maiibarguen" target="_blank"><div id="facebook_icon"></div></a></li>
                         <li><a href="https://instagram.com/maiibarguen/" target="_blank"><div id="instagram_icon"></div></a></li>
                         <li><a href="https://es.linkedin.com/in/martaibarguen" target="_blank"><div id="linkedin_icon"></div></a></li>
-                        <!--li><a href="https://www.facebook.com/profile.php?id=100005021984806" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-                        <li><a href="https://instagram.com/maiibarguen/" class="icon fa-instagram" target="_blank"><span class="label">Facebook</span></a></li>
-                        <li><a href="contact.html" class="icon fa-envelope"><span class="label">Email</span></a></li-->
                     </ul>
                 </div>
 				
@@ -124,13 +159,7 @@
             <!-- Main -->
             <div id="main">
                 <div class="container">
-                    <div class="row">
-                        <div class="12u" id="contact_content">
-                            <img src="images/fotoContact.jpg" alt="Mai Ibarg&uuml;en. Fot&oacute;grafa especializada en artes esc&eacute;nicas y eventos." title="Contacto Mai Ibarg&uuml;en Fot&oacute;grafa Artes Esc&eacute;nicas y Eventos, Zaragoza" id="contact_photo" />
-                            <div>
-                                Para contactar conmigo, puedes escribirme a maiibarguenphotography@gmail.com
-                            </div>
-                        </div>
+                    <div id="blog_entries">
                     </div>
                 </div>
             </div>
@@ -144,16 +173,4 @@
                     <br>
 		</div-->
 	</body>
-        <script>
-            var container = document.querySelector('#masonry-grid');
-            var msnry;
-            // initialize Masonry after all images have loaded
-            imagesLoaded( container, function() {
-            msnry = new Masonry( container, {
-                    columnWidth: 232,
-                    itemSelector: '.grid-item',
-                    gutter: 0
-                    } );
-            });
-        </script>
 </html>

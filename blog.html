@@ -80,7 +80,7 @@
 
     // console.log('====== ' + response.feed.title + ' ======');
     
-    for(var i in response.items){
+    for(var i = 0; i < 4; i++){
         var item = response.items[i];
         
         var length = 300
@@ -100,6 +100,8 @@
         $( "#blog_entries" ).append( imageSource );*/
         
     }
+    
+    $( "#blog_entries" ).append( "<p style='margin-left: 20px;'><a href='https://maiibarguen.wordpress.com/' target='_blank'>Ver todas las entradas del blog</a></p>" );
 });  
     
     
